@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The EMPATH Project | Engaging Mindfully</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Setup Inter font and custom scrollbar aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdf4; /* Very light green from palette for bg */
+            color: #043915; /* Dark green for primary text */
+        }
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f0fdf4; }
+        ::-webkit-scrollbar-thumb { background: #B0CE88; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #4C763B; }
+
+        .card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .card:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        .empth-button.active {
+            background-color: #4C763B; /* Active button color */
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(76, 118, 59, 0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header & Hero Section --><header class="bg-gradient-to-r from-[#043915] to-[#4C763B] text-white py-16 px-4 md:px-8 shadow-lg">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-xs tracking-widest uppercase font-semibold opacity-75">The Advocacy for a Safer Digital World</h1>
+            <h2 class="text-4xl sm:text-6xl font-extrabold mt-2 mb-4 leading-tight">
+                The <span class="text-[#FFFD8F]">EMPATH</span> Project
+            </h2>
+            <p class="text-xl sm:text-2xl font-light italic">
+                “Engaging Mindfully by Promoting and Advocating for Transformation, and Healing.”
+            </p>
+            <div class="mt-6 text-sm font-medium">
+                #DigitalEmpathy #StopOGBVH #TransformHealing
+            </div>
+        </div>
+    </header>
+
+    <!-- Urgency and Problem Statement --><section class="py-16 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <h3 class="text-3xl font-bold text-[#043915] mb-4">The Crisis of Digital Fear and Silence</h3>
+                <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                    Digital platforms meant to connect and empower have instead become spaces of fear and silence for many.
+                </p>
+                <div class="p-6 bg-red-50 border-l-4 border-red-500 rounded-lg shadow-md">
+                    <p class="text-2xl font-bold text-red-700">7 out of 10</p>
+                    <p class="text-base text-red-600 mt-1">
+                        girls and young women in the Philippines have experienced online harassment, with nearly **80% receiving threats of sexual violence.**
+                    </p>
+                </div>
+            </div>
+            <!-- Placeholder Image/Graphic --><div class="order-1 md:order-2 bg-[#B0CE88] bg-opacity-30 p-8 rounded-xl card text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 mx-auto text-[#4C763B]">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6.75a.75.75 0 0 0 1.5 0V6ZM12 17.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+                </svg>
+                <p class="mt-3 text-sm text-[#043915] font-medium">Raising awareness on Online Gender-Based Violence and Harassment (OGBVH).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EMPATH Interactive Section --><section class="py-16 bg-white px-4 md:px-8 shadow-inner">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-center text-[#043915] mb-2">Our 6 Pillars of Digital Action</h3>
+            <p class="text-center text-lg text-gray-700 mb-10">Click on each letter to see how we define EMPATH.</p>
+
+            <!-- EMPATH Buttons --><div id="empth-buttons" class="flex flex-wrap justify-center gap-4 mb-8">
+                <button data-pillar="E" class="empth-button active bg-[#4C763B] text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all transform hover:scale-105">E</button>
+                <button data-pillar="M" class="empth-button bg-[#B0CE88] text-[#043915] font-bold py-3 px-8 rounded-full shadow-md transition-all transform hover:scale-105">M</button>
+                <button data-pillar="P" class="empth-button bg-[#B0CE88] text-[#043915] font-bold py-3 px-8 rounded-full shadow-md transition-all transform hover:scale-105">P</button>
+                <button data-pillar="A" class="empth-button bg-[#B0CE88] text-[#043915] font-bold py-3 px-8 rounded-full shadow-md transition-all transform hover:scale-105">A</button>
+                <button data-pillar="T" class="empth-button bg-[#B0CE88] text-[#043915] font-bold py-3 px-8 rounded-full shadow-md transition-all transform hover:scale-105">T</button>
+                <button data-pillar="H" class="empth-button bg-[#B0CE88] text-[#043915] font-bold py-3 px-8 rounded-full shadow-md transition-all transform hover:scale-105">H</button>
+            </div>
+
+            <!-- EMPATH Content Display --><div id="empth-content" class="p-8 bg-[#B0CE88] bg-opacity-20 rounded-xl card border-t-4 border-[#4C763B] min-h-40">
+                <!-- Content will be injected here --></div>
+        </div>
+    </section>
+
+    <!-- Urgency and Call to Action Section (Case Studies) --><section class="py-16 px-4 md:px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-center text-[#043915] mb-8">Why EMPATH Matters: The Call to Action</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Case Study 1 Card --><div class="bg-white p-6 rounded-xl card border-l-4 border-[#B0CE88] shadow-md">
+                    <h4 class="text-xl font-semibold text-[#043915] mb-2">The Case of Nathalie Geralde</h4>
+                    <p class="text-gray-700 text-sm">
+                        Despite her courage in speaking out against injustice at the "Baha sa Luneta" rally, Nathalie faced cruel online ridicule and body-shaming. This starkly shows how digital hostility can harm dignity and silence brave voices.
+                    </p>
+                    <span class="inline-block mt-3 text-xs font-medium text-[#4C763B]">#ProtectDignity</span>
+                </div>
+
+                <!-- Case Study 2 Card --><div class="bg-white p-6 rounded-xl card border-l-4 border-[#FFFD8F] shadow-md">
+                    <h4 class="text-xl font-semibold text-[#043915] mb-2">The Tragedy of Emman Atienza</h4>
+                    <p class="text-gray-700 text-sm">
+                        A student content creator, Emman faced a relentless wave of cyberbullying and threats while sharing her mental health journey. Her passing at age 19 is a heartbreaking reminder of the devastating consequences of lacking digital empathy.
+                    </p>
+                    <span class="inline-block mt-3 text-xs font-medium text-[#4C763B]">#EndTheSilence</span>
+                </div>
+            </div>
+            <p class="text-center text-lg mt-10 text-[#043915] font-medium">
+                The EMPATH Project aims to create safer spaces where confidence is built, not broken, and every individual's well-being is prioritized.
+            </p>
+        </div>
+    </section>
+
+    <!-- SDG Alignment Section --><section class="py-16 px-4 md:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-center text-[#043915] mb-10">Aligned with Global Goals (SDGs)</h3>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- SDG 3 --><div class="text-center p-6 rounded-xl card bg-green-50 border-t-4 border-green-500">
+                    <div class="text-3xl mb-2 text-green-600 font-extrabold">3</div>
+                    <h4 class="text-lg font-semibold text-gray-800">Good Health & Well-being</h4>
+                    <p class="text-sm text-gray-600 mt-2">Promoting mental wellness and emotional resilience against OGBVH impact.</p>
+                </div>
+
+                <!-- SDG 5 --><div class="text-center p-6 rounded-xl card bg-pink-50 border-t-4 border-pink-500">
+                    <div class="text-3xl mb-2 text-pink-600 font-extrabold">5</div>
+                    <h4 class="text-lg font-semibold text-gray-800">Gender Equality</h4>
+                    <p class="text-sm text-gray-600 mt-2">Advocating against gender-based harassment and uplifting all voices to ensure safety and respect.</p>
+                </div>
+
+                <!-- SDG 16 --><div class="text-center p-6 rounded-xl card bg-blue-50 border-t-4 border-blue-500">
+                    <div class="text-3xl mb-2 text-blue-600 font-extrabold">16</div>
+                    <h4 class="text-lg font-semibold text-gray-800">Peace, Justice & Institutions</h4>
+                    <p class="text-sm text-gray-600 mt-2">Fostering respect, fairness, and accountability to create peaceful and inclusive digital spaces.</p>
+                </div>
+                
+                <!-- SDG 17 --><div class="text-center p-6 rounded-xl card bg-yellow-50 border-t-4 border-yellow-500">
+                    <div class="text-3xl mb-2 text-yellow-700 font-extrabold">17</div>
+                    <h4 class="text-lg font-semibold text-gray-800">Partnerships for the Goals</h4>
+                    <p class="text-sm text-gray-600 mt-2">Encouraging collaboration among students, educators, and organizations to sustain digital empathy efforts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Social Media --><footer class="bg-[#043915] text-white py-12 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <h4 class="text-xl font-bold mb-1">The EMPATH Project</h4>
+                <p class="text-sm text-gray-300">Promoting digital empathy and awareness.</p>
+                <p class="text-xs text-gray-400 mt-2">&copy; 2025 St. Paul College of Makati Advocacy</p>
+            </div>
+            
+            <!-- Social Media Icons --><div class="flex space-x-6">
+                <!-- Instagram Icon --><a href="#" class="text-gray-300 hover:text-[#FFFD8F] transition-colors" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <!-- TikTok Icon (Simplified) --><a href="#" class="text-gray-300 hover:text-[#B0CE88] transition-colors" aria-label="TikTok">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2H3v20h18V2zM12 7V4M12 10v3M12 17v-4M8 7v10M16 7v10"></path><path d="M16 7h-4a4 4 0 0 0 0 8h4"></path></svg>
+                </a>
+                <!-- Facebook Icon --><a href="#" class="text-gray-300 hover:text-[#4C763B] transition-colors" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity --><script>
+        const empthDefinitions = {
+            E: {
+                title: "E: Engage",
+                description: "Engage students and netizens to actively participate in creating safe and respectful online spaces.",
+                color: "text-[#4C763B]"
+            M: {
+                title: "M: Mindfully",
+                description: "Mindfully communicate by encouraging conscious and thoughtful interactions in digital platforms.",
+                color: "text-[#B0CE88]" 
+            },
+            P: {
+                title: "P: Promote",
+                description: "Promote accountability by fostering responsibility, fairness, and respect in online communities.",
+                color: "text-[#FFFD8F]" /* Yellow */
+            },
+            A: {
+                title: "A: Advocate",
+                description: "Advocate for inclusivity, ensuring all voices are heard and protected from harassment.",
+                color: "text-[#4C763B]" /* Dark green */
+            },
+            T: {
+                title: "T: Transform",
+                description: "Transform harmful digital behaviors and cultures into spaces of understanding, support, and positivity.",
+                color: "text-[#B0CE88]" /* Light green */
+            },
+            H: {
+                title: "H: Healing",
+                description: "Healing emotional and psychological wounds caused by online violence through empathy and awareness.",
+                color: "text-[#FFFD8F]" /* Yellow */
+            }
+        };
+
+        const buttons = document.querySelectorAll('.empth-button');
+        const contentDiv = document.getElementById('empth-content');
+
+        function updateContent(pillar) {
+            const data = empthDefinitions[pillar];
+            contentDiv.innerHTML = `
+                <div class="flex items-center space-x-4 mb-3">
+                    <span class="text-4xl font-extrabold ${data.color}">${pillar}</span>
+                    <h4 class="text-2xl font-bold text-[#043915]">${data.title}</h4>
+                </div>
+                <p class="text-lg text-gray-700">${data.description}</p>
+            `;
+        }
+
+        function handleButtonClick(event) {
+            const pillar = event.currentTarget.dataset.pillar;
+
+            // Remove active state from all buttons and reset their color
+            buttons.forEach(button => {
+                button.classList.remove('active', 'bg-[#4C763B]', 'text-white');
+                button.classList.add('bg-[#B0CE88]', 'text-[#043915]');
+            });
+
+            // Add active state to the clicked button and change its color
+            event.currentTarget.classList.add('active', 'bg-[#4C763B]', 'text-white');
+            event.currentTarget.classList.remove('bg-[#B0CE88]', 'text-[#043915]');
+
+            // Update the content area
+            updateContent(pillar);
+        }
+
+        // Attach event listeners
+        buttons.forEach(button => {
+            button.addEventListener('click', handleButtonClick);
+        });
+
+        // Initialize with the first pillar (E)
+        window.onload = function() {
+            updateContent('E');
+        }
+
+    </script>
+</body>
+</html>
